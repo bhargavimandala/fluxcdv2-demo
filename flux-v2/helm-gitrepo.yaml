@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: helm-charts
+  name: helm-nginx-chart
   namespace: flux-system
 spec:
   interval: 1m
