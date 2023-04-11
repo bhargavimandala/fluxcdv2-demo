@@ -1,6 +1,9 @@
 apiVersion: v1
 name: bookinfo
 description: A Helm chart for Kubernetes
+home: https://github.com/bhargavimandala/fluxcdv2-demo/flux-v2/bookinfo
+sources:
+- https://github.com/bhargavimandala/fluxcdv2-demo/flux-v2/bookinfo
 
 # A chart can be either an 'application' or a 'library' chart.
 #
