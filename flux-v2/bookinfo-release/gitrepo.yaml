@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: bookinfo
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/bhargavimandala/fluxcdv2-demo/tree/main/flux-v2/bookinfo
+  ref:
+    branch: main
