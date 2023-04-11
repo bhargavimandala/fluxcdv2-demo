@@ -5,6 +5,19 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/bhargavimandala/fluxcdv2-demo/tree/main/flux-v2/bookinfo
+  url: https://github.com/bhargavimandala/fluxcdv2-demo/flux-v2/bookinfo
   ref:
     branch: main
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: bookinfo
+  namespace: flux-system
+spec:
+  interval: 10m0s
+  path: ./flux-v2
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system  
