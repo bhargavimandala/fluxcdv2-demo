@@ -16,8 +16,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./flux-v2
+  path: ./bookinfo-release
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system  
+    name: flux-system
